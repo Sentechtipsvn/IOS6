@@ -17,13 +17,19 @@ jobs:
         run: pip install -r requirements.txt
       - name: Generate 23 icon sources
         run: python tools/generate.py
-      - name: Package rootless .deb
+      - name: Generate separate preview resources
+        run: python tools/extras.py
+      - name: Package rootless .deb (icons only)
         run: sh scripts/package.sh
       - name: Inspect install paths
         run: |
           dpkg-deb -c dist/*.deb > /tmp/contents
           grep -q 'var/jb/Library/Themes/Sentech Retro 6.theme/IconBundles' /tmp/contents
+          ! grep -q 'System/Library/Audio/' /tmp/contents
       - uses: actions/upload-artifact@v4
         with:
           name: Retro6-Icons-0.1-untested
-          path: dist/*.deb
+          path: |
+            dist/*.deb
+            build/extras/*.wav
+            build/extras/*.jpg

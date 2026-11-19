@@ -42,3 +42,8 @@ See [Device Test Checklist](docs/TESTING.md).
 **Music/lock/unlock/charging sounds are not included in the icon package.** No Apple-extracted artwork or audio is included. Theme is independent of Apple.
 
 This repository is the authoritative source for new builds; do not confuse earlier local test packages with GitHub Actions output.
+
+## Extra resources & showcase
+- `python3 tools/extras.py` produces a custom retro waves wallpaper and three **original preview-only WAV sounds**. They are not included in the .deb and are not automatically installed as system sounds.
+- `docs/index.html` is a responsive website concept with live vector icon previews. To publish it as a site, enable GitHub Pages with `/docs` as source in repo Settings; no custom domain is required yet.
+- CI artifacts include the icon-only `.deb`, original sound previews, and wallpaper. The site and sounds are exploratory; do not claim full iOS 6 behavior yet.
