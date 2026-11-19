@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Sentech source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Configure Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - name: Install icon build dependencies
@@ -52,9 +52,9 @@ jobs:
           grep -q "iOS 6 Reference Local.theme/IconBundles" /tmp/package-list.txt
           ! grep -q "System/Library/Audio" /tmp/package-list.txt
       - name: Upload short-lived personal test file (NOT a Release)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: iOS6-Faithful-0.2-PERSONAL-TEST-ONLY
           path: dist-local/*.deb
-          retention-days: 1
+          retention-days: 7
           if-no-files-found: error
