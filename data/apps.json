@@ -1,0 +1,186 @@
+[
+  {
+    "id": "phone",
+    "name": "Phone",
+    "bundle_id": "com.apple.mobilephone",
+    "top": "#90d72a",
+    "bottom": "#247c18",
+    "verify": "system-reference"
+  },
+  {
+    "id": "messages",
+    "name": "Messages",
+    "bundle_id": "com.apple.MobileSMS",
+    "top": "#96dd36",
+    "bottom": "#319928",
+    "verify": "system-reference"
+  },
+  {
+    "id": "safari",
+    "name": "Safari",
+    "bundle_id": "com.apple.mobilesafari",
+    "top": "#72cbfb",
+    "bottom": "#045da0",
+    "verify": "system-reference"
+  },
+  {
+    "id": "camera",
+    "name": "Camera",
+    "bundle_id": "com.apple.camera",
+    "top": "#babfc6",
+    "bottom": "#444a55",
+    "verify": "system-reference"
+  },
+  {
+    "id": "photos",
+    "name": "Photos",
+    "bundle_id": "com.apple.mobileslideshow",
+    "top": "#f3f7ee",
+    "bottom": "#99b4ba",
+    "verify": "system-reference"
+  },
+  {
+    "id": "settings",
+    "name": "Settings",
+    "bundle_id": "com.apple.Preferences",
+    "top": "#c3c8cc",
+    "bottom": "#646b74",
+    "verify": "system-reference"
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "bundle_id": "com.apple.Music",
+    "top": "#e8c4f9",
+    "bottom": "#753a9d",
+    "verify": "system-reference"
+  },
+  {
+    "id": "mail",
+    "name": "Mail",
+    "bundle_id": "com.apple.mobilemail",
+    "top": "#6dc5ff",
+    "bottom": "#187cbd",
+    "verify": "system-reference"
+  },
+  {
+    "id": "appstore",
+    "name": "App Store",
+    "bundle_id": "com.apple.AppStore",
+    "top": "#8cddff",
+    "bottom": "#167fd3",
+    "verify": "system-reference"
+  },
+  {
+    "id": "maps",
+    "name": "Maps",
+    "bundle_id": "com.apple.Maps",
+    "top": "#f2e9c5",
+    "bottom": "#8bb2a7",
+    "verify": "system-reference"
+  },
+  {
+    "id": "clock",
+    "name": "Clock",
+    "bundle_id": "com.apple.mobiletimer",
+    "top": "#3b414d",
+    "bottom": "#11151c",
+    "verify": "system-reference"
+  },
+  {
+    "id": "calendar",
+    "name": "Calendar",
+    "bundle_id": "com.apple.mobilecal",
+    "top": "#fdfcf6",
+    "bottom": "#c7c7c5",
+    "verify": "system-reference"
+  },
+  {
+    "id": "weather",
+    "name": "Weather",
+    "bundle_id": "com.apple.weather",
+    "top": "#4caeff",
+    "bottom": "#0d5da9",
+    "verify": "system-reference"
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "bundle_id": "com.facebook.Facebook",
+    "top": "#5b8bd6",
+    "bottom": "#163a81",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "messenger",
+    "name": "Messenger",
+    "bundle_id": "com.facebook.Messenger",
+    "top": "#6cbeff",
+    "bottom": "#255ad0",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "zalo",
+    "name": "Zalo",
+    "bundle_id": "com.zing.zalo",
+    "top": "#67b8f8",
+    "bottom": "#0c5eaf",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "bundle_id": "com.google.ios.youtube",
+    "top": "#f35d51",
+    "bottom": "#9a0b0b",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "tiktok",
+    "name": "TikTok",
+    "bundle_id": "com.zhiliaoapp.musically",
+    "top": "#303845",
+    "bottom": "#080c15",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "bundle_id": "ph.telegra.Telegraph",
+    "top": "#8cceef",
+    "bottom": "#1678b5",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "shopee",
+    "name": "Shopee",
+    "bundle_id": "com.shopee.vn",
+    "top": "#ff9b4a",
+    "bottom": "#c93f17",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "gmail",
+    "name": "Gmail",
+    "bundle_id": "com.google.Gmail",
+    "top": "#f1f3f4",
+    "bottom": "#9ea5ab",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "bundle_id": "com.spotify.client",
+    "top": "#83d865",
+    "bottom": "#1e5c24",
+    "verify": "confirm-on-device"
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "bundle_id": "com.burbn.instagram",
+    "top": "#aa8d6f",
+    "bottom": "#53362a",
+    "verify": "confirm-on-device"
+  }
+]

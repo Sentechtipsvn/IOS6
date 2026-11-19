@@ -1,0 +1,29 @@
+name: Retro6 Alpha
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependencies
+        run: pip install -r requirements.txt
+      - name: Generate 23 icon sources
+        run: python tools/generate.py
+      - name: Package rootless .deb
+        run: sh scripts/package.sh
+      - name: Inspect install paths
+        run: |
+          dpkg-deb -c dist/*.deb > /tmp/contents
+          grep -q 'var/jb/Library/Themes/Sentech Retro 6.theme/IconBundles' /tmp/contents
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Retro6-Icons-0.1-untested
+          path: dist/*.deb
