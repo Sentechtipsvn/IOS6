@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "description": "LOCAL-ONLY personal reference mappings. These source raster icons are NOT licensed for public redistribution.",
+  "source_repository": "https://github.com/Sentechtipsvn/iOS-6-Icons",
+  "source_upstream": "https://github.com/zagnut531/iOS-6-Icons",
+  "source_groups": {
+    "iphone": "iPhone & iPod touch/Cropped icons",
+    "third_party": "3rd-party icons"
+  },
+  "mappings": [
+    {
+      "app": "Phone",
+      "bundle_id": "com.apple.mobilephone",
+      "source_path": "iPhone & iPod touch/Cropped icons/Phone.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Messages",
+      "bundle_id": "com.apple.MobileSMS",
+      "source_path": "iPhone & iPod touch/Cropped icons/Messages.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Safari",
+      "bundle_id": "com.apple.mobilesafari",
+      "source_path": "iPhone & iPod touch/Cropped icons/Safari.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Mail",
+      "bundle_id": "com.apple.mobilemail",
+      "source_path": "iPhone & iPod touch/Cropped icons/Mail.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Photos",
+      "bundle_id": "com.apple.mobileslideshow",
+      "source_path": "iPhone & iPod touch/Cropped icons/Photos.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Camera",
+      "bundle_id": "com.apple.camera",
+      "source_path": "iPhone & iPod touch/Cropped icons/Camera.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Settings",
+      "bundle_id": "com.apple.Preferences",
+      "source_path": "iPhone & iPod touch/Cropped icons/Settings.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Clock",
+      "bundle_id": "com.apple.mobiletimer",
+      "source_path": "iPhone & iPod touch/Cropped icons/Clock.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Calendar",
+      "bundle_id": "com.apple.mobilecal",
+      "source_path": "iPhone & iPod touch/Cropped icons/Calendar.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Music",
+      "bundle_id": "com.apple.Music",
+      "source_path": "iPhone & iPod touch/Cropped icons/Music.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "App Store",
+      "bundle_id": "com.apple.AppStore",
+      "source_path": "iPhone & iPod touch/Cropped icons/App Store.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Maps",
+      "bundle_id": "com.apple.Maps",
+      "source_path": "iPhone & iPod touch/Cropped icons/Maps.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Weather",
+      "bundle_id": "com.apple.weather",
+      "source_path": "iPhone & iPod touch/Cropped icons/Weather.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Notes",
+      "bundle_id": "com.apple.mobilenotes",
+      "source_path": "iPhone & iPod touch/Cropped icons/Notes.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Calculator",
+      "bundle_id": "com.apple.calculator",
+      "source_path": "iPhone & iPod touch/Cropped icons/Calculator.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Contacts",
+      "bundle_id": "com.apple.MobileAddressBook",
+      "source_path": "iPhone & iPod touch/Cropped icons/Contacts.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "FaceTime",
+      "bundle_id": "com.apple.facetime",
+      "source_path": "iPhone & iPod touch/Cropped icons/FaceTime.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Reminders",
+      "bundle_id": "com.apple.reminders",
+      "source_path": "iPhone & iPod touch/Cropped icons/Reminders.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Stocks",
+      "bundle_id": "com.apple.stocks",
+      "source_path": "iPhone & iPod touch/Cropped icons/Stocks.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Books",
+      "bundle_id": "com.apple.iBooks",
+      "source_path": "iPhone & iPod touch/Cropped icons/iBooks.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Wallet",
+      "bundle_id": "com.apple.Passbook",
+      "source_path": "iPhone & iPod touch/Cropped icons/Passbook.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Podcasts",
+      "bundle_id": "com.apple.podcasts",
+      "source_path": "iPhone & iPod touch/Cropped icons/Podcasts.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "iTunes Store",
+      "bundle_id": "com.apple.MobileStore",
+      "source_path": "iPhone & iPod touch/Cropped icons/iTunes.jpg",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Find My",
+      "bundle_id": "com.apple.findmy",
+      "source_path": "iPhone & iPod touch/Cropped icons/Find iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Facebook",
+      "bundle_id": "com.facebook.Facebook",
+      "source_path": "3rd-party icons/Facebook iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Messenger",
+      "bundle_id": "com.facebook.Messenger",
+      "source_path": "3rd-party icons/Facebook Messenger iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Instagram",
+      "bundle_id": "com.burbn.instagram",
+      "source_path": "3rd-party icons/Instagram.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "YouTube",
+      "bundle_id": "com.google.ios.youtube",
+      "source_path": "3rd-party icons/YouTube iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Google Maps",
+      "bundle_id": "com.google.Maps",
+      "source_path": "3rd-party icons/Google Maps iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Chrome",
+      "bundle_id": "com.google.chrome.ios",
+      "source_path": "3rd-party icons/Google Chrome iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Gmail",
+      "bundle_id": "com.google.Gmail",
+      "source_path": "3rd-party icons/Gmail.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Spotify",
+      "bundle_id": "com.spotify.client",
+      "source_path": "3rd-party icons/Spotify iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "WhatsApp",
+      "bundle_id": "net.whatsapp.WhatsApp",
+      "source_path": "3rd-party icons/WhatsApp iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    },
+    {
+      "app": "Twitter/X",
+      "bundle_id": "com.atebits.Tweetie2",
+      "source_path": "3rd-party icons/Twitter iPhone.PNG",
+      "bundle_id_verified_on_device": false
+    }
+  ]
+}

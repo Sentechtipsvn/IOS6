@@ -3,3 +3,6 @@ stage/
 dist/
 .DS_Store
 __pycache__/
+
+dist-local/
+assets/private-reference/

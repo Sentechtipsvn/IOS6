@@ -1,7 +1,7 @@
 name: Retro6 Alpha
 on:
   push:
-    branches: [master]
+    branches: [master, ios6-faithful-development]
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,6 +19,8 @@ jobs:
         run: python tools/generate.py
       - name: Generate separate preview resources
         run: python tools/extras.py
+      - name: Validate optional import utility syntax
+        run: python -m py_compile tools/import_local_references.py
       - name: Package rootless .deb (icons only)
         run: sh scripts/package.sh
       - name: Inspect install paths
