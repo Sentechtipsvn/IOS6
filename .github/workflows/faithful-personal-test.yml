@@ -1,0 +1,60 @@
+name: Faithful iOS 6 - Personal Test Build
+on:
+  push:
+    branches:
+      - ios6-faithful-development
+    paths:
+      - .github/workflows/faithful-personal-test.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-personal-test:
+    name: Build iPhone 7 Plus iOS 15.8.8 .deb
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Sentech source
+        uses: actions/checkout@v5
+      - name: Configure Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install icon build dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Prepare original fallback theme
+        run: python tools/generate.py
+      - name: Check out owner-provided reference fork
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --quiet --depth 1 --filter=blob:none --sparse \
+            "https://github.com/Sentechtipsvn/iOS-6-Icons.git" \
+            "$RUNNER_TEMP/iOS-6-Icons"
+          git -C "$RUNNER_TEMP/iOS-6-Icons" sparse-checkout set \
+            "iPhone & iPod touch/Cropped icons" \
+            "3rd-party icons"
+          test -s "$RUNNER_TEMP/iOS-6-Icons/iPhone & iPod touch/Cropped icons/Phone.jpg"
+      - name: Build separate reference test theme
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/import_local_references.py --source "$RUNNER_TEMP/iOS-6-Icons"
+          python - <<'PY'
+          from pathlib import Path
+          root=Path("build/iOS 6 Reference Local.theme/IconBundles")
+          for bundle in ("com.apple.mobilephone", "com.apple.mobilesafari", "com.apple.camera", "com.apple.Preferences"):
+              icon=root / (bundle + "-large.png")
+              assert icon.is_file(), f"missing {icon}"
+          print("Core icons found.")
+          PY
+          sh scripts/package-local-reference.sh
+          dpkg-deb --contents dist-local/*.deb | tee /tmp/package-list.txt
+          grep -q "iOS 6 Reference Local.theme/IconBundles" /tmp/package-list.txt
+          ! grep -q "System/Library/Audio" /tmp/package-list.txt
+      - name: Upload short-lived personal test file (NOT a Release)
+        uses: actions/upload-artifact@v6
+        with:
+          name: iOS6-Faithful-0.2-PERSONAL-TEST-ONLY
+          path: dist-local/*.deb
+          retention-days: 7
+          if-no-files-found: error

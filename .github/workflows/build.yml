@@ -1,7 +1,7 @@
 name: Retro6 Alpha
 on:
   push:
-    branches: [master]
+    branches: [master, ios6-faithful-development]
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,6 +19,20 @@ jobs:
         run: python tools/generate.py
       - name: Generate separate preview resources
         run: python tools/extras.py
+      - name: Validate optional import utility syntax
+        run: python -m py_compile tools/import_local_references.py
+      - name: Smoke test local-only reference importer with project-owned fixture
+        run: |
+          mkdir -p "build/reference-fixture/iPhone & iPod touch/Cropped icons"
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          p=Path("build/Sentech Retro 6.theme/IconBundles/com.apple.mobilephone.png")
+          Image.open(p).convert("RGB").save("build/reference-fixture/iPhone & iPod touch/Cropped icons/Phone.jpg")
+          PY
+          python tools/import_local_references.py --source build/reference-fixture --limit 1
+          sh scripts/package-local-reference.sh
+          dpkg-deb --contents dist-local/*.deb | grep -q 'iOS 6 Reference Local.theme/IconBundles'
       - name: Package rootless .deb (icons only)
         run: sh scripts/package.sh
       - name: Inspect install paths

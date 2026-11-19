@@ -47,3 +47,11 @@ This repository is the authoritative source for new builds; do not confuse earli
 - `python3 tools/extras.py` produces a custom retro waves wallpaper and three **original preview-only WAV sounds**. They are not included in the .deb and are not automatically installed as system sounds.
 - `docs/index.html` is a responsive website concept with live vector icon previews. To publish it as a site, enable GitHub Pages with `/docs` as source in repo Settings; no custom domain is required yet.
 - CI artifacts include the icon-only `.deb`, original sound previews, and wallpaper. The site and sounds are exploratory; do not claim full iOS 6 behavior yet.
+
+## iOS 6 Faithful Edition / source audit
+
+The owner-provided historical icon fork is **catalogued** under `data/reference-inventory.json` and 34 application-to-Bundle-ID mappings are in `data/reference-map.json`. Historical raster icons remain in the user's separate source fork. They are **not redistributed** by this repository.
+
+See [Faithful Edition design and legal/source audit](docs/FAITHFUL_SOURCES.md). A new opt-in, **local-only** workflow allows the owner to generate a personal test comparison theme from a downloaded ZIP while leaving the original working icon pack intact. Run `python3 tools/import_local_references.py --help` for usage.
+
+The public GitHub Actions build remains the original Sentech-authored icon pack, not the external raster icon collection.
